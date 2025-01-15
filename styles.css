@@ -5,18 +5,19 @@
 }
 
 body {
-    background-color: #FFFDF6;
+    background-color: #fcf5e5;
+    font-family: Montserrat;
+    overflow: hidden;
 }
 
 #navbbar {
     position: sticky;
     top: 0;
-    overflow: hidden;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #FFFDF6;
+    background-color: #fcf5e5;
     overflow: hidden;
 }
 
@@ -26,7 +27,6 @@ body {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-family: oxygen;
 }
 
 .topnav .active {
@@ -34,7 +34,6 @@ body {
     padding-left: 80px;
     font-size: 25px;
 }
-
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -47,7 +46,7 @@ body {
     float: right;
 }
 
-img {
+#img-logo {
     position: fixed; 
     left: 23px; 
     top: 20px;
@@ -55,4 +54,45 @@ img {
 
 img:hover {
     cursor: pointer;
+}
+
+.about-container {
+    margin: auto;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#img-main {
+    position: relative;
+    top: 20px;
+}
+
+.about-container img {
+    float: left;
+    margin-right: 50px;
+}
+
+.about-info {
+    padding-top: 85px;
+}
+
+.big-txt {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#donate-btn {
+    margin-top: 80px;
+    background-color: #f0e926;
+    border: none;
+    padding: 12px 32px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#donate-btn:hover {
+    cursor: pointer;
+    background-color: #e8e123;
 }
