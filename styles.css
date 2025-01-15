@@ -7,3 +7,52 @@
 body {
     background-color: #FFFDF6;
 }
+
+#navbbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #FFFDF6;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: oxygen;
+}
+
+.topnav .active {
+    padding: 25px 30px;
+    padding-left: 80px;
+    font-size: 25px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #989898;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right a {
+    padding: 30px 30px 0px 0px;
+    float: right;
+}
+
+img {
+    position: fixed; 
+    left: 23px; 
+    top: 20px;
+}
+
+img:hover {
+    cursor: pointer;
+}
