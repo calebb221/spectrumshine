@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -115,3 +116,83 @@ main {
     margin-right: 300px;
     display: flex;
 }
+
+#video {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+.images {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 400px;
+  }
+
+  @media (max-width: 1024px) {
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 0 auto;
+      padding-bottom: 100rem;
+    }
+  }
+
+.project-header {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+.project-tile {
+    overflow: hidden;
+  } 
+
+  .autismspeaks, .autismorg, .autismnavigator {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-desc {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .project-links {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .quote {
+    color: transparent;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .project-links:hover .quote {
+    color: black;
+  }
+  
+  .project-links:hover .autismspeaks {
+    transform: scale(0.9);
+  }
+  
+  .project-links:hover .autismorg {
+    transform: scale(0.9);
+  }
+  
+  .project-links:hover .autismnavigator {
+    transform: scale(0.9);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
