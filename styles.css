@@ -211,7 +211,7 @@ main {
     }
 }
     
-@media (max-width: 1800px) {
+@media (max-width: 1024px) {
     #img-main {
         height: 100px;
         width: 200px;
