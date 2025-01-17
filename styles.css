@@ -210,10 +210,3 @@ main {
         padding-bottom: 100rem;
     }
 }
-    
-@media (max-width: 768px) {
-    #img-main {
-        height: 100px;
-        width: 200px;
-    }
-}
