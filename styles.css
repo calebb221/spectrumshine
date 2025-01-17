@@ -131,7 +131,7 @@ main {
     padding: 0 400px;
   }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 .images {
     display: flex;
     flex-wrap: wrap;
@@ -143,14 +143,12 @@ main {
     padding-bottom: 100rem;
 }
 
-
 #img-main {
     position: relative;
     top: 50px;
     height: 300px;
     width: 400px;
 }
-
 
 }
 
