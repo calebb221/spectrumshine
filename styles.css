@@ -103,8 +103,10 @@ main {
     width: 70%;
 }
 
+/* ASD */
+
 .asd-info-container {
-    margin-top: 150px;
+    margin-top: 230px;
     display: flex;
     margin-left: 300px;
     margin-right: 300px;
@@ -387,19 +389,27 @@ main {
 
 @media only screen and (max-width : 320px) {
 
+    #logo-name {
+        font-size: 15px;
+    }
+
+    .navbar-brand {
+        padding-left: 10px;
+    }
+
     .about-container {
         display: flex;
-        margin-top: 80px;
         flex-wrap: wrap;
         text-align: center;
+        margin-top: 0px;
     }
 
     .about-info {
-        padding-top: 50px;
+        padding-top: 80px;
     }
 
     #donate-btn {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     #yt-vid {
@@ -408,7 +418,7 @@ main {
     }
 
     .asd-info-container {
-        margin-top: 100px;
+        margin-top: 120px;
         display: flex;
         flex-wrap: wrap;
         text-align: center;
@@ -446,10 +456,12 @@ main {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        justify-content: space-between;
+        padding: 0px;
+        margin-top: 100px;
       }
     
     .project-header {
+        padding: 0px;
         width: 100%;
         text-align: center;
         font-size: 2.5rem;
@@ -458,23 +470,36 @@ main {
     
     .project-tile {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        
     } 
     
     .autismspeaks, .autismorg, .autismnavigator {
         width: 200px;
         height: 200px;
-        margin-left: 10px;
         border-radius: 20px;
         transition: transform 0.5s ease;
     }
     
     .project-desc {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
+        width: 200px;
     }
-    
-    .project-links {
-        text-decoration: none;
-        color: black;
+
+    .quote {
+        display: none;
+    }
+
+    .real-quote {
+        margin-top: 150px;
+        margin-bottom: 70px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        font-family: Battambang;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }                                                   
