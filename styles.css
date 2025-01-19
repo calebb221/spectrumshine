@@ -6,27 +6,12 @@
 }
 
 body {
-    background-color: #fcf5e5;
-    font-family: Montserrat;
+    background-color: #fcf5e5 !important;
+    font-family: Montserrat !important;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #fcf5e5;
-    top: 0;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content:  space-between;
-    z-index: 2;
-}   
-
-#navbar {
-    padding: 30px;
-}
-
-#navbar a {
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -37,8 +22,6 @@ body {
 }
 
 .topnav .active {
-    padding: 25px 30px;
-    padding-left: 80px;
     font-size: 25px;
 }
 
@@ -47,23 +30,22 @@ body {
   color: #989898;
 }
 
-#img-logo {
-    position: fixed; 
-    margin-left: 50px; 
-    top: 20px;
+.navbar-brand {
+    padding-left: 50px;
 }
 
-img:hover {
-    cursor: pointer;
+.navbar-nav > li{
+    padding-left:30px;
 }
 
 main {
     z-index: 1;
 }
 
+/* About Us */
+
 .about-container {
     display: flex;
-    margin: auto;
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 80px;
@@ -103,8 +85,22 @@ main {
     background-color: #e8e123;
 }
 
+/* Header Styles */
+
 .header-container {
     margin-right: 150px;
+}
+
+.header-qn {
+    margin-left: 150px; width: 100%
+}
+
+.header-icon {
+    margin-left: 200px; margin-top: 10px;
+}
+
+.header-desc {
+    width: 70%;
 }
 
 .asd-info-container {
@@ -390,19 +386,95 @@ main {
 \*------------------------------------*/
 
 @media only screen and (max-width : 320px) {
+
     .about-container {
         display: flex;
-        margin: auto;
-        margin-left: 10px;
-        margin-right: 10px;
         margin-top: 80px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .about-info {
+        padding-top: 50px;
+    }
+
+    #donate-btn {
+        margin-top: 50px;
+    }
+
+    #yt-vid {
+        height: auto;
+        width: 250px;
+    }
+
+    .asd-info-container {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header-container {
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .header-qn {
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .header-icon {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .header-desc {
+        width: 100%;
+        margin-top: 30px;
     }
 
     .help-info-container {
-        margin-top: 180px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-top: 120px;
         display: flex;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
-}
+    .images {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+    .project-header {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    .project-tile {
+        overflow: hidden;
+    } 
+    
+    .autismspeaks, .autismorg, .autismnavigator {
+        width: 200px;
+        height: 200px;
+        margin-left: 10px;
+        border-radius: 20px;
+        transition: transform 0.5s ease;
+    }
+    
+    .project-desc {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .project-links {
+        text-decoration: none;
+        color: black;
+    }
+}                                                   
